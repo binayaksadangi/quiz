@@ -4,16 +4,19 @@ import Title from '../components/title';
 import Btn from '../components/button';
 
 
-const Home = () => {
+const Home = ({navigation}) => {
+    const nav =()=>{
+        navigation.navigate('Quiz');
+    }
   return (
-    <View>
+    <View style={styles.cont}>
         <Title heading='Quizem'/>
         <View style={styles.bannerContainer}>
             <Image source={require('../assets/banner.png')} style={styles.banner}
             resizeMode='contain'
             />
         </View>
-        <Btn title='Start'/>
+        <Btn nav={nav} title='Start'/>
     </View>
   );
 };
@@ -21,6 +24,11 @@ const Home = () => {
 export default Home;
 
 const styles = StyleSheet.create({
+    cont:{
+        flex: 1,
+        justifyContent: 'center',
+        backgroundColor: '#14213d',
+    },
     banner: {
         height: 300,
         width: 300,

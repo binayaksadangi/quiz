@@ -3,7 +3,10 @@ import React from 'react';
 import Title from '../components/title';
 import Btn from '../components/button';
 
-const Result = () => {
+const Result = ({navigation}) => {
+  const nav =()=>{
+    navigation.navigate('Home');
+}
   return (
     <View>
       <Title heading='Results'/>
@@ -12,7 +15,7 @@ const Result = () => {
             resizeMode='contain'
             />
         </View>
-        <Btn title='Start Again'/>
+        <Btn nav={nav} title='Start Again'/>
     </View>
   );
 };

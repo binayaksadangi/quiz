@@ -4,7 +4,7 @@ import React from 'react';
 const Btn = (props) => {
   return (
     <View>
-       <TouchableOpacity style={styles.btnCont}>
+       <TouchableOpacity style={styles.btnCont} onPress={props.nav}>
             <Text style={styles.button}>{props.title}</Text>
         </TouchableOpacity>
     </View>
