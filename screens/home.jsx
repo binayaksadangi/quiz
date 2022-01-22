@@ -10,13 +10,13 @@ const Home = ({navigation}) => {
     }
   return (
     <View style={styles.cont}>
-        <Title heading='Quizem'/>
+        <Title heading='QUIZEM'/>
         <View style={styles.bannerContainer}>
             <Image source={require('../assets/banner.png')} style={styles.banner}
             resizeMode='contain'
             />
         </View>
-        <Btn nav={nav} title='Start'/>
+        <Btn nav={nav} title='START'/>
     </View>
   );
 };
@@ -25,7 +25,7 @@ export default Home;
 
 const styles = StyleSheet.create({
     cont:{
-        flex: 1,
+        height: '100%',
         justifyContent: 'center',
         backgroundColor: '#14213d',
     },
@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
         marginTop: 50,
         justifyContent: 'center',
         alignItems: 'center',
+        flex: 1,
     },
 
 

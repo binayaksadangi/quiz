@@ -13,14 +13,17 @@ export default Title;
 
 const styles = StyleSheet.create({
     heading: {
-        fontSize: 35,
-        borderColor: '#fff',
-        borderWidth: 1,
+        fontSize: 36,
+        fontWeight: '600',
+        // borderColor: '#fff',
+        // borderWidth: 1,
         padding: 10,
         marginTop: 50,
         color: '#E5E5E5',
         marginHorizontal: 20,
+        marginTop:60,
         textAlign: 'center',
+        letterSpacing: 4,
         
     }
 });

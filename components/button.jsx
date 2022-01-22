@@ -16,13 +16,16 @@ export default Btn;
 const styles = StyleSheet.create({
     btnCont:{
         marginHorizontal: 50,
+        marginVertical: 30,
         borderRadius: 10,
         backgroundColor: '#FCA311',
         marginTop: 40,
         padding: 10,
     },
     button:{
-        fontSize: 30,
+        fontSize: 24,
+        fontWeight: '700',
+        letterSpacing: 2,
         color: '#e5e5e5',
         textAlign: 'center',
     }
